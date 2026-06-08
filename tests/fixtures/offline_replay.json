@@ -1,0 +1,39 @@
+{
+  "market": {
+    "condition_id": "cond-btc-65000",
+    "question": "Will BTC be above 65000 at expiry?",
+    "token_id_yes": "yes-token",
+    "token_id_no": "no-token",
+    "category": "crypto",
+    "end_date": "2026-06-07T09:00:00+00:00",
+    "active": true
+  },
+  "yes_books": [
+    {
+      "token_id": "yes-token",
+      "bids": [{"price": "0.54", "size": "10"}],
+      "asks": [{"price": "0.56", "size": "10"}],
+      "event_ts": "2026-06-07T08:00:00+00:00",
+      "recv_ts": "2026-06-07T08:00:00+00:00"
+    }
+  ],
+  "no_books": [
+    {
+      "token_id": "no-token",
+      "bids": [{"price": "0.40", "size": "10"}],
+      "asks": [{"price": "0.42", "size": "10"}],
+      "event_ts": "2026-06-07T08:00:00+00:00",
+      "recv_ts": "2026-06-07T08:00:00+00:00"
+    }
+  ],
+  "ticks": [
+    {
+      "symbol": "BTCUSDT",
+      "market_type": "perp",
+      "price": "70000",
+      "event_ts": "2026-06-07T08:00:00+00:00",
+      "recv_ts": "2026-06-07T08:00:00+00:00"
+    }
+  ]
+}
+

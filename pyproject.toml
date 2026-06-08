@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polymarket-quant"
+version = "0.1.0"
+description = "Polymarket prediction market arbitrage research system."
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+    "pydantic>=2.10,<3",
+    "httpx>=0.28,<1",
+    "websockets>=16,<17",
+    "py-clob-client>=0.34,<1",
+    "python-binance>=1.0,<2",
+    "web3>=7,<8",
+    "openbb>=4.6,<5",
+    "mcp>=1,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9,<10",
+    "pytest-asyncio>=1,<2",
+    "pytest-cov>=7,<8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
